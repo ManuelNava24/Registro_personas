@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+</head>
+<body class="pagina-registro">
+    <div class="formulario-contenedor">
+        <h1 class="formulario-titulo">Registro de Usuario</h1>
+        <form class="registro-formulario" action="php/registro_usuarios.php" method="post">
+            <div class="form-group">
+                <label class="form-label" for="nombre_completo">Nombre Completo:</label>
+                <input class="form-input" type="text" id="nombre_completo" name="nombre_completo" required maxlength="80">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input class="form-input" type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="correo_electronico">Correo Electrónico:</label>
+                <input class="form-input" type="email" id="correo_electronico" name="correo_electronico" required maxlength="80">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="pass">Contraseña:</label>
+                <input class="form-input" type="password" id="pass" name="pass" required maxlength="80">
+            </div>
+            
+            <button class="submit-btn" type="submit">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
